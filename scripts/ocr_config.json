@@ -1,0 +1,43 @@
+{
+    "alphabet": " !\"'()*+,-./0123456789:;<=>?ABCDEFGHIJKLMNOPRSTVWY[\\]_abcdefghiklmnoprstuvwxyz|}ЁАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяё’№",
+    "save_dir": "/workdir/data/experiments/test",
+    "num_epochs": 100,
+    "pretrain_path": "",
+    "image": {
+        "width": 1024,
+        "height": 128
+    },
+    "train": {
+        "datasets": [
+            {
+                "csv_path": "train.csv",
+                "prob": 1
+            }
+
+        ],
+        "epoch_size": 100000,
+        "batch_size": 64
+    },
+    "val": {
+        "datasets": [
+            {
+                "csv_path": "val.csv",
+                "prob": 1
+            }
+
+        ],
+        "epoch_size": null,
+        "batch_size": 64
+    },
+    "test": {
+        "datasets": [
+            {
+                "csv_path": "test.csv",
+                "prob": 1
+            }
+
+        ],
+        "epoch_size": null,
+        "batch_size": 64
+    }
+}
